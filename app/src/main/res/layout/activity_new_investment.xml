@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".activities.NewInvestmentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_edit" />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_person"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Mr Joseph"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:fontFamily="@font/poppins_light"
+        android:text="New York, Street 42, USA" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Investment Style" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/rose_red"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Aggressive" />
+    </LinearLayout>
+
+    <View
+        style="@style/ProfilePageOptionsDivider"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        style="@style/ProfilePageOptions"
+        android:text="Manage Payment Methods"
+        app:drawableEndCompat="@drawable/ic_arrow_right"
+        app:drawableStartCompat="@drawable/ic_credit_card" />
+
+    <View style="@style/ProfilePageOptionsDivider" />
+
+
+    <TextView
+        style="@style/ProfilePageOptions"
+        android:text="Transaction History"
+        app:drawableEndCompat="@drawable/ic_arrow_right"
+        app:drawableStartCompat="@drawable/ic_history" />
+
+    <View style="@style/ProfilePageOptionsDivider" />
+
+    <TextView
+        style="@style/ProfilePageOptions"
+        android:text="Contact Support"
+        app:drawableEndCompat="@drawable/ic_arrow_right"
+        app:drawableStartCompat="@drawable/ic_support_agent" />
+
+    <View style="@style/ProfilePageOptionsDivider" />
+
+    <TextView
+        style="@style/ProfilePageOptions"
+        android:text="About Us"
+        app:drawableEndCompat="@drawable/ic_arrow_right"
+        app:drawableStartCompat="@drawable/ic_info" />
+
+    <View style="@style/ProfilePageOptionsDivider" />
+
+    <TextView
+        style="@style/ProfilePageOptions"
+        android:text="Privacy Policy"
+        app:drawableEndCompat="@drawable/ic_arrow_right"
+        app:drawableStartCompat="@drawable/ic_privacy_tip" />
+
+    <View style="@style/ProfilePageOptionsDivider" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
